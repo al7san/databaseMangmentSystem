@@ -134,6 +134,7 @@ Parallel database architectures differ in how they organize resources such as me
   - Complex to design and maintain.
 - **Use Case:** Large-scale systems requiring hybrid solutions.
 
+![par](image/par.jpeg)
 
  **Summary Table**
 
