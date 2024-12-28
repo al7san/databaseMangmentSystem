@@ -85,6 +85,10 @@
 - **Definition:** Mechanisms that ensure transactions are executed concurrently without violating the consistency of the database.
 - **Examples:** Locking protocols, timestamp ordering, and optimistic concurrency control.
 
+---
+## **16. RDMA (Remote Direct Memory Access)**
+
+**Remote Direct Memory Access (RDMA)** is a high-performance communication protocol that allows one computer to directly access the memory of another computer without involving the operating system or the CPU on either side. It significantly reduces latency and increases throughput in data transfers by bypassing traditional network protocol stacks.
 
 ---
 # Quiz: Database Concepts
@@ -507,3 +511,92 @@ Two-Phase Locking (2PL) ensures deadlock prevention.
 **Answer:** False (2PL does not prevent deadlocks.)
 </details>
 
+---
+## 33. What does RDMA allow computers to do?
+- a) Share operating systems  
+- b) Directly access each other's memory  
+- c) Use each other's CPUs  
+- d) Transfer data using traditional protocols  
+
+<details>
+<summary>Show Answer</summary>
+**Answer:** b) Directly access each other's memory
+</details>
+
+---
+## 34. Which of the following is NOT a characteristic of RDMA?
+- a) Low latency  
+- b) High CPU utilization  
+- c) High throughput  
+- d) Bypassing traditional network protocols  
+
+<details>
+<summary>Show Answer</summary>
+**Answer:** b) High CPU utilization
+</details>
+
+---
+
+## 35. What component handles data transfers in RDMA?
+- a) Operating System  
+- b) CPU  
+- c) Network Interface Card (NIC)  
+- d) Application Layer  
+
+<details>
+<summary>Show Answer</summary>
+**Answer:** c) Network Interface Card (NIC)
+</details>
+
+---
+## 36. RDMA reduces data transfer latency by bypassing traditional network protocol stacks.
+- **True**  
+- **False**
+
+<details>
+<summary>Show Answer</summary>
+**Answer:** True
+</details>
+
+---
+
+## 37. RDMA requires constant involvement of the operating system during data transfers.
+- **True**  
+- **False**
+
+<details>
+<summary>Show Answer</summary>
+**Answer:** False (RDMA bypasses the operating system during transfers.)
+</details>
+
+---
+
+## 38. RDMA allows one computer to access another computer's memory without CPU involvement.
+- **True**  
+- **False**
+
+<details>
+<summary>Show Answer</summary>
+**Answer:** True
+</details>
+
+---
+
+## 39. RDMA increases CPU usage during memory access.
+- **True**  
+- **False**
+
+<details>
+<summary>Show Answer</summary>
+**Answer:** False (RDMA reduces CPU usage by offloading data transfer to the NIC.)
+</details>
+
+---
+## 40. RDMA is commonly used in distributed databases and high-performance computing.
+- **True**  
+- **False**
+
+<details>
+<summary>Show Answer</summary>
+**Answer:** True
+</details>
