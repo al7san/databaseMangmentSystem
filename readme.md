@@ -1,4 +1,4 @@
 
-Open-ended questions [Open-ended questions](../openEndedQ.md)
+Open-ended questions [](../openEndedQ.md)
 
-Definition and MCA + T/F [] (../definition.md)
+Definition and MCA + T/F [] (../defnations+ MCQ,TF.md)
