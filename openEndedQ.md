@@ -39,7 +39,33 @@ Add lock and unlock instructions to transactions T₃₁ and T₃₂ so that the
  ---
 ### 3- Show by example that there are schedules possible under the tree protocol that are not possible under the two-phase locking protocol, and vice versa.
 
-### Answer:
+#### Answer:
+ **1. Tree Protocol**
+- ***Definition:***
+  The tree protocol is a concurrency control protocol used to manage locks in a hierarchical manner. It ensures that:
+  - A transaction can only lock a child node in the hierarchy if it has already locked the parent node.
+  - Once a node is unlocked, it cannot be locked again during the same transaction.
+
+- ***Advantages:***
+  - Deadlock-free as it imposes a strict locking order.
+
+- ***Disadvantages:***
+  - Reduces concurrency because of the hierarchical locking order.
+ 
+
+
+**2. Two-Phase Locking Protocol (2PL)**
+- ***Definition:***
+  The two-phase locking protocol ensures serializability by dividing the execution of transactions into two distinct phases:
+  1. ***Growing Phase:*** Locks are acquired but not released.
+  2. ***Shrinking Phase:*** Locks are released but no new locks are acquired.
+
+- ***Advantages:***
+  - Guarantees conflict-serializable schedules.
+
+- ***Disadvantages:***
+  - Deadlocks can occur due to lack of ordering constraints.
+
 Consider the tree-structured database graph given below.
 
 ![g](image/18-5-1.png)
@@ -57,7 +83,7 @@ Schedule possible under 2PL but not under tree protocol:
 
 ---
 
-## Failure Classification (Chapter 19: Recovery System)
+### 4- Failure Classification (Chapter 19: Recovery System)
 
 Failures in database systems can be classified into the following types:
 
@@ -80,7 +106,7 @@ Each of these failure types requires specific recovery mechanisms to maintain th
 
 ---
 
-# Parallel Database Architectures
+### 5- Parallel Database Architectures
 
 Parallel database architectures differ in how they organize resources such as memory, processors, and disks to improve performance and scalability.
 
@@ -145,3 +171,58 @@ Parallel database architectures differ in how they organize resources such as me
 | Shared-Nothing     | Private        | Private      | High        | High                   | Large-scale, distributed systems      |
 | Hybrid             | Mixed          | Mixed        | High        | Mixed                  | Custom workloads, cloud environments  |
 
+---
+### 6-  Blockchain: Definition, Properties, and Applications
+
+## **Definition:**
+A blockchain is a decentralized, distributed digital ledger that records transactions across multiple nodes in a network. Each transaction is stored in a block, and these blocks are linked using cryptographic hashes, forming a secure and tamper-resistant chain.
+
+---
+
+## **Properties of Blockchain:**
+
+1. **Decentralization:**
+   - Transactions are verified and added by a distributed network of nodes without requiring a central authority.
+
+2. **Tamper Resistance:**
+   - Altering a block requires changing all subsequent blocks, making tampering infeasible due to the computational effort required.
+
+3. **Irrefutability:**
+   - Transactions are signed digitally, ensuring that participants cannot deny their actions.
+
+4. **Anonymity:**
+   - Users are identified by public keys, which are not directly tied to real-world identities unless linked externally.
+
+5. **Consensus:**
+   - Nodes agree on the validity of transactions using algorithms such as Proof of Work (PoW) or Proof of Stake (PoS).
+
+---
+
+## **Applications of Blockchain:**
+
+1. **Cryptocurrencies:**
+   - Example: Bitcoin and Ethereum provide decentralized digital currencies without a central bank.
+
+2. **Supply Chain Management:**
+   - Track the origin, authenticity, and movement of goods across the supply chain.
+
+3. **Health Care:**
+   - Securely store and share medical records with patient consent.
+
+4. **E-Government:**
+   - Transparent public records management and secure voting systems.
+
+5. **Finance and Trade:**
+   - Cross-border payments, smart contracts, and decentralized finance (DeFi) applications.
+
+6. **Internet of Things (IoT):**
+   - Enhance device security and enable autonomous machine-to-machine transactions.
+
+7. **Academic Records:**
+   - Distribute and verify academic transcripts securely.
+
+8. **Loyalty Programs:**
+   - Track and redeem rewards efficiently across platforms.
+
+ ***Summary:***
+Blockchain technology provides a secure, transparent, and efficient way to manage and verify transactions across various industries. Its unique properties make it a transformative tool for applications ranging from digital currencies to healthcare and supply chain management.
