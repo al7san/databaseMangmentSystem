@@ -225,3 +225,30 @@ A blockchain is a decentralized, distributed digital ledger that records transac
 
  ***Summary:***
 Blockchain technology provides a secure, transparent, and efficient way to manage and verify transactions across various industries. Its unique properties make it a transformative tool for applications ranging from digital currencies to healthcare and supply chain management.
+
+---
+---
+# The Database Administrator (DBA) and Their Role in Managing System Security
+
+The Database Administrator (DBA) is the central authority responsible for managing the database system, and their main tasks include:
+
+1. **Account Creation**:
+   - Creating new accounts and passwords for users or groups of users to enable access to the database system.
+
+2. **Privilege Granting**:
+   - Granting privileges to specific users based on their needs to use the system.
+
+3. **Privilege Revocation**:
+   - Revoking privileges that were previously granted to certain accounts.
+
+4. **Security Level Assignment**:
+   - Assigning a security clearance level to a user account based on the required permissions.
+
+## DBA Roles:
+- **Database Protection**:
+  - The DBA is responsible for ensuring the overall security of the database system.
+  - This is done by controlling access through the actions mentioned above.
+  
+- **Privilege Classification**:
+  - Actions (2 and 3) are used to manage **discretionary authorization**.
+  - Action (4) is used to manage **mandatory authorization**.
