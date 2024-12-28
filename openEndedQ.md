@@ -1,4 +1,3 @@
-
 ### 1-  Consider a database for an airline where the database system uses snapshot isolation.Describe a particular scenario in which a nonserializable execution occurs,but the airline may be willing to accept it in order to gain better overall performance.
 ### Answer:
 Consider a web-based airline reservation system. There could be many concurrent requests to see the list of available flights and available seats in each flight and to book tickets. 
