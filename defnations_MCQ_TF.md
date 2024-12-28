@@ -2,7 +2,7 @@
 
 ## **1. ACID Properties**
 - **Atomicity:** Ensures that all operations in a transaction are completed; if any part fails, the transaction is aborted.
-- **Consistency:** Guarantees that a transaction transforms the database from one valid state to another.
+- **Consistency:** Ensures that a transaction transforms the database from one valid state to another.
 - **Isolation:** Ensures that transactions do not interfere with each other.
 - **Durability:** Ensures that the effects of a committed transaction are permanent, even in case of a system failure.
 
