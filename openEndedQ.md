@@ -171,56 +171,56 @@ Parallel database architectures differ in how they organize resources such as me
 | Hybrid             | Mixed          | Mixed        | High        | Mixed                  | Custom workloads, cloud environments  |
 
 ---
-### 6-  Blockchain: Definition, Properties, and Applications
+## 6-  Blockchain: Definition, Properties, and Applications
 
-## **Definition:**
+ **Definition:**
 A blockchain is a decentralized, distributed digital ledger that records transactions across multiple nodes in a network. Each transaction is stored in a block, and these blocks are linked using cryptographic hashes, forming a secure and tamper-resistant chain.
 
 ---
 
-## **Properties of Blockchain:**
+ **Properties of Blockchain:**
 
-1. **Decentralization:**
+1. ***Decentralization:***
    - Transactions are verified and added by a distributed network of nodes without requiring a central authority.
 
-2. **Tamper Resistance:**
+2. ***Tamper Resistance:***
    - Altering a block requires changing all subsequent blocks, making tampering infeasible due to the computational effort required.
 
-3. **Irrefutability:**
+3. ***Irrefutability:***
    - Transactions are signed digitally, ensuring that participants cannot deny their actions.
 
-4. **Anonymity:**
+4. ***Anonymity:***
    - Users are identified by public keys, which are not directly tied to real-world identities unless linked externally.
 
-5. **Consensus:**
+5. ***Consensus:***
    - Nodes agree on the validity of transactions using algorithms such as Proof of Work (PoW) or Proof of Stake (PoS).
 
 ---
 
-## **Applications of Blockchain:**
+ **Applications of Blockchain:**
 
-1. **Cryptocurrencies:**
+1. ***Cryptocurrencies:***
    - Example: Bitcoin and Ethereum provide decentralized digital currencies without a central bank.
 
-2. **Supply Chain Management:**
+2. ***Supply Chain Management:***
    - Track the origin, authenticity, and movement of goods across the supply chain.
 
-3. **Health Care:**
+3. ***Health Care:***
    - Securely store and share medical records with patient consent.
 
-4. **E-Government:**
+4. ***E-Government:***
    - Transparent public records management and secure voting systems.
 
-5. **Finance and Trade:**
+5. ***Finance and Trade:***
    - Cross-border payments, smart contracts, and decentralized finance (DeFi) applications.
 
-6. **Internet of Things (IoT):**
+6. ***Internet of Things (IoT):***
    - Enhance device security and enable autonomous machine-to-machine transactions.
 
-7. **Academic Records:**
+7. ***Academic Records:***
    - Distribute and verify academic transcripts securely.
 
-8. **Loyalty Programs:**
+8. ***Loyalty Programs:***
    - Track and redeem rewards efficiently across platforms.
 
  ***Summary:***
