@@ -1,6 +1,9 @@
 # Definitions from the Reference (Database System Concepts, 7th Edition)
 
-## **1. ACID Properties**
+## **1. Transaction**
+- **Definition:** A sequence of operations performed as a single logical unit of work. A transaction ensures ACID properties to maintain database integrity.
+---
+## **2. ACID Properties**
 - **Atomicity:** Ensures that all operations in a transaction are completed; if any part fails, the transaction is aborted.
 - **Consistency:** Ensures that a transaction transforms the database from one valid state to another.
 - **Isolation:** Ensures that transactions do not interfere with each other.
@@ -8,79 +11,73 @@
 
 ---
 
-## **2. Recovery Schema**
+## **3. Recovery Schema**
 - A recovery schema outlines the methods and mechanisms for restoring a database to a consistent state after a failure. This includes transaction logs, checkpoints, and rollback/redo operations.
 
 ---
 
-## **3. LOMA (Lock-Ordered Multi-Version Architecture)**
+## **4. LOMA (Lock-Ordered Multi-Version Architecture)**
 - A concurrency control mechanism ensuring that locks on objects follow a strict order to prevent deadlocks while supporting multi-versioning for isolation.
 
 ---
 
-## **4. NOMA (Non-Ordered Multi-Version Architecture)**
+## **5. NOMA (Non-Ordered Multi-Version Architecture)**
 - A concurrency control mechanism that allows operations to access any version of the data without strict locking order, improving concurrency.
 
 ---
 
-## **5. NUMA (Non-Uniform Memory Access)**
+## **6. NUMA (Non-Uniform Memory Access)**
 - **Definition:** A computer memory architecture where memory access time depends on the memory's proximity to the processor.
 - **Use Case:** Improves performance in **shared-memory architectures** by reducing memory access bottlenecks.
 - **Example System:** Multi-core processors in high-performance computing environments.
 
 ---
 
-## **6. Schedule**
+## **7. Schedule**
 - A sequence of operations from multiple transactions that specifies the order in which the operations are executed. Schedules are evaluated for serializability to ensure correctness.
 
 ---
 
-## **7. Shared-Memory Architecture**
+## **8. Shared-Memory Architecture**
 - **Definition:** An architecture where processors share the same memory and storage. Communication between processors is fast due to shared memory.
 - **Advantages:** High-speed communication.
 - **Disadvantages:** Limited scalability due to contention for shared resources.
 
 ---
 
-## **8. Data Servers**
+## **9. Data Servers**
 - **Definition:** Servers that store and manage data items, allowing clients to fetch and process data locally. Common in client-server architectures.
 - **Example:** JSON, XML-based servers used for semi-structured data.
 
 ---
 
-## **9. Transaction Servers**
+## **10. Transaction Servers**
 - **Definition:** Servers designed to handle transactions. They process queries, execute transactions, and manage data consistency and concurrency.
 - **Example:** SQL servers like Oracle or Microsoft SQL Server.
 
 ---
 
-## **10. Blockchain**
+## **11. Blockchain**
 - **Definition:** A decentralized, distributed ledger that records transactions in linked blocks secured by cryptography.
 - **Properties:** Decentralization, tamper resistance, anonymity, irrefutability.
 - **Applications:** Cryptocurrencies, supply chain, health care, and IoT.
 
 ---
 
-## **11. Full Node (Blockchain)**
+## **12. Full Node (Blockchain)**
 - **Definition:** A node that maintains a complete copy of the blockchain and participates in the consensus process.
 
 ---
 
-## **12. Light Node (Blockchain)**
+## **13. Light Node (Blockchain)**
 - **Definition:** A node that interacts with the blockchain by submitting transactions but does not maintain the full blockchain or participate in the consensus process.
 
 ---
 
-## **13. Parallel System**
+## **14. Parallel System**
 - **Definition:** A database system that uses multiple processors and disks to process data in parallel for improved throughput and response time.
 
 ---
-
-## **14. Transaction**
-- **Definition:** A sequence of operations performed as a single logical unit of work. A transaction ensures ACID properties to maintain database integrity.
-
----
-
 ## **15. Concurrency Control**
 - **Definition:** Mechanisms that ensure transactions are executed concurrently without violating the consistency of the database.
 - **Examples:** Locking protocols, timestamp ordering, and optimistic concurrency control.
