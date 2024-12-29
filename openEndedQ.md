@@ -12,31 +12,8 @@ However, this situation is usually not very serious since cancellations often re
 the airline can arrange a different flight for one of the passengers on the flight, giving incentives to accept the change. Using snapshot isolation improves the overall 
 performance in this case since the booking transactions read the data from their snapshots only and do not block other concurrent transactions.
 
----
-### 2- Consider the following two transactions:
-![1](image/18-2-1.png)
-
-**Question:**  
-Add lock and unlock instructions to transactions T₃₁ and T₃₂ so that they observe the two-phase locking protocol. Can the execution of these transactions result in a deadlock?
-
-### Answer:
- a. Lock and unlock instructions:
-
-![T₃₄](image/18-2-2.png)
-
-
-
-![T₃₅](image/18-2-3.png)
-
-
- b. Execution of these transactions can result in deadlock. For example, consider the following partial schedule:
- 
-![T](image/18-2-4.png)
-
- The transactions are now deadlocked.
- 
  ---
-### 3- Show by example that there are schedules possible under the tree protocol that are not possible under the two-phase locking protocol, and vice versa.
+### 2- Show by example that there are schedules possible under the tree protocol that are not possible under the two-phase locking protocol, and vice versa.
 
 #### Answer:
  **1. Tree Protocol**
@@ -80,6 +57,28 @@ Schedule possible under 2PL but not under tree protocol:
 
  ![2pl](image/18-5-3.png)
 
+---
+### 2- Consider the following two transactions:
+![1](image/18-2-1.png)
+
+**Question:**  
+Add lock and unlock instructions to transactions T₃₁ and T₃₂ so that they observe the two-phase locking protocol. Can the execution of these transactions result in a deadlock?
+
+### Answer:
+ a. Lock and unlock instructions:
+
+![T₃₄](image/18-2-2.png)
+
+
+
+![T₃₅](image/18-2-3.png)
+
+
+ b. Execution of these transactions can result in deadlock. For example, consider the following partial schedule:
+ 
+![T](image/18-2-4.png)
+
+ The transactions are now deadlocked.
 ---
 
 ### 4- Failure Classification (Chapter 19: Recovery System)
