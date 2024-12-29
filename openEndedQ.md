@@ -19,7 +19,7 @@ performance in this case since the booking transactions read the data from their
  **1. Tree Protocol**
 - ***Definition:***
   The tree protocol is a concurrency control protocol used to manage locks in a hierarchical manner. It ensures that:
-  - A transaction can only lock a child node in the hierarchy if it has already locked the parent node.
+  - A transaction can lock a child node only after locking its parent.
   - Once a node is unlocked, it cannot be locked again during the same transaction.
 
 - ***Advantages:***
