@@ -58,7 +58,7 @@ Schedule possible under 2PL but not under tree protocol:
  ![2pl](image/18-5-3.png)
 
 ---
-### 2- Consider the following two transactions:
+## 3- Consider the following two transactions:
 ![1](image/18-2-1.png)
 
 **Question:**  
@@ -81,7 +81,7 @@ Add lock and unlock instructions to transactions T₃₁ and T₃₂ so that the
  The transactions are now deadlocked.
 ---
 
-### 4- Failure Classification (Chapter 19: Recovery System)
+## 4- Failure Classification (Chapter 19: Recovery System)
 
 Failures in database systems can be classified into the following types:
 
@@ -104,7 +104,7 @@ Each of these failure types requires specific recovery mechanisms to maintain th
 
 ---
 
-### 5- Parallel Database Architectures
+## 5- Parallel Database Architectures
 
 Parallel database architectures differ in how they organize resources such as memory, processors, and disks to improve performance and scalability.
 
@@ -227,7 +227,7 @@ Blockchain technology provides a secure, transparent, and efficient way to manag
 
 ---
 ---
-# The Database Administrator (DBA) and Their Role in Managing System Security
+## 7- The Database Administrator (DBA) and Their Role in Managing System Security
 
 The Database Administrator (DBA) is the central authority responsible for managing the database system, and their main tasks include:
 
